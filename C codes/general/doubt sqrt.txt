@@ -1,0 +1,21 @@
+#include<stdio.h> 
+#include<math.h>
+void sqrt(float n){
+  for(float i=1;i<=n;i+0.01){
+  if(i*i==n){
+printf("%d",i);
+  }
+  else{
+   printf("Not a perfect square!");
+  }
+  }}
+int main(){
+   float n;
+   printf("enter a no.= ");
+   scanf("%f",&n);
+  sqrt(n);
+
+
+
+return 0;
+}

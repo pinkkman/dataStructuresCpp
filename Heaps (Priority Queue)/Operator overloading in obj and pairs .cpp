@@ -20,14 +20,14 @@ this->marks=marks;
 
 bool operator < (const student &obj) const{
     return this->marks < obj.marks;    //max heap
-    // return this->marks > obj.marks;    //max heap
+    // return this->marks > obj.marks;    //min heap
 }
 };
 
 struct compare{
     bool operator() (pair<string,int>&p1, pair<string,int>&p2){
-      return  p1.first < p1.first; //max heap
-    //   return  p2.first > p2.first; //min heap
+      return  p1.first < p2.first; //max heap
+    //   return  p1.first > p2.first; //min heap
     }
 };
 

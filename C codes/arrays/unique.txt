@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+void uni(int arr[],int size){
+ 
+for(int i=0;i<size;i++){
+   int flag=0;
+for(int j=0;j<size;j++){
+if(arr[i]==arr[j]){
+flag=flag+1;
+} 
+}if(flag==1){
+  cout<<arr[i]<<"    ";
+}
+}}
+
+int main()
+{
+  int size = 6, n;
+  int arr[size] = {3, 5, 2, 6, 6, 2};
+uni(arr,6);
+
+  return 0;
+}

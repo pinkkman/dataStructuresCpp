@@ -1,0 +1,54 @@
+#include <iostream>
+#include<vector>
+using namespace std;
+bool isvalid(vector<int>arr,int n,int m,int mid){
+int pages=0,stu=1;
+for(int i=0;i<n;i++){
+if(arr[i]>mid){
+  return false;
+}
+if(pages+arr[i]<=mid){
+  pages+=arr[i];
+ 
+}
+else{
+  stu++;
+  pages=arr[i];
+
+}
+if(stu>m){
+  return false;
+}else{
+  return true;
+}
+}
+}
+
+
+int bkl(vector<int>&arr,int n, int m){
+  int mid,sum=0;
+  for(int i=0;i<n;i++){
+sum+=arr[i];
+  }
+  int st=0,ans=-1,end=sum;
+while(st<=end){
+  mid=st+(end-st)/2;
+if(isvalid(arr,n,m,mid)){
+    ans=mid;
+  st=mid+1;
+
+}
+else{
+  end=mid-1;
+}
+}return ans;
+}
+
+
+int main()
+{
+vector<int>arr={2,1,3,4};
+int n=arr.size();
+cout<<bkl(arr,n,2);
+  return 0;
+}

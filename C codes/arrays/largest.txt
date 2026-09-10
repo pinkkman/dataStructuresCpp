@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+  int size=6;
+int arr[size];
+for(int i=0;i<size;i++){
+  cout<<"enter the "<<i<<"th number";
+  cin>>arr[i];
+}
+int max=1;
+for(int j=0;j<size;j++){
+ if(max<arr[j]){
+  max=arr[j];
+ }
+ else{
+  max=max;
+ }
+}
+cout<<"the highest array is "<<max;
+
+return 0;
+}

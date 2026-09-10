@@ -1,0 +1,18 @@
+#include<stdio.h> 
+
+void power(int n1,int n2){
+  int p=1;
+  for(int i=1; i<=n2; i++){
+  p=n1*p;}
+  printf("%d",p);
+}
+int main(){
+   int n1,n2;
+   printf("enter a number : ");
+   scanf("%d",&n1);
+     printf("enter another number : ");
+   scanf("%d",&n2);
+   power(n1,n2);
+
+return 0;
+}

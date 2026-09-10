@@ -1,0 +1,27 @@
+#include <iostream>
+#include<vector>
+using namespace std;
+void sorting(int n, vector<int>&arr){
+  int minin;
+for(int i=0;i<n-1;i++){
+minin=i;
+for(int j=i+1;j<n;j++){
+if(arr[j]<arr[minin]){
+  minin=j;
+}
+}swap(arr[minin],arr[i]);
+}
+
+}
+  
+int main()
+{
+vector<int>arr={2,1,3,4};
+int n=arr.size();
+sorting(n,arr);
+for(int i=0;i<n;i++){
+  cout<<arr[i];
+  cout<<"\t";
+}
+  return 0;
+}

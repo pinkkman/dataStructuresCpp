@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+void intr(int arra[],int arrb[],int size){
+  for(int i=0;i<size;i++){
+    int flag=0;
+for(int k=0;k<size;k++){
+  if(arra[i]==arrb[k]){
+    flag=1;
+    break;
+  }
+
+  }  if(flag==1){
+    cout<<arra[i];
+  }}}
+
+int main()
+{
+  int size = 6, n;
+  int arr1[size] = {3, 5, 2, 6, 6, 2};
+  int arr2[size]={4,2,6,3,2,1};
+  intr(arr1,arr2,size);
+  return 0;
+}

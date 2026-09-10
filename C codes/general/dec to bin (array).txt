@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+// void  binary(int n){
+//   int i=1,mod,bin[100];
+//   int count=n;
+//   while(n>=1){
+// mod=n%2;
+// n=n/2;
+// bin[i]=mod;
+
+// cout<<bin[count-i];
+// i++;
+//   }return;
+// }
+int main(){
+int n;
+  cout<<"enter n : ";
+  cin>>n;
+   int i=0,mod,bin[100];
+  int count=0;
+  while(n>=1){
+mod=n%2;
+n=n/2;
+bin[i]=mod;
+i++;
+count++;
+  }
+for(int j=1;j<=count;j++){
+  cout<<bin[count-j];
+}
+return 0;
+}

@@ -1,0 +1,31 @@
+#include <iostream>
+#include<vector>
+using namespace std;
+    int majorityElement(vector<int>& nums) {
+int freq=0,ans=0;
+for(int value:nums){
+if(freq==0){
+    ans=value;
+} 
+if(ans==value){
+    freq++;
+}else{
+freq--;
+}
+}
+if(freq>0){
+return ans;
+}
+else return -1;}
+
+int main()
+{
+  int size = 6, tar;
+  vector<int>arr = {4,3,4,4,4,3,3}; //sum_7 =1,2
+ 
+ cout<<majorityElement(arr);
+
+
+ 
+  return 0;
+}

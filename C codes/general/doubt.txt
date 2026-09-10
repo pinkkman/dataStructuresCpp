@@ -1,0 +1,21 @@
+#include<stdio.h> 
+#include<math.h>
+void alpha(char *al);
+int main(){
+ char letter;
+    char *al = &letter;
+
+alpha(al);
+   
+
+
+return 0;
+}
+
+void alpha(char *al){
+   for(char i='a';i<='z';i++)
+   { *al=i;
+   printf("%c\n",*al);
+
+   }
+}

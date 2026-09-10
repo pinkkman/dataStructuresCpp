@@ -1,0 +1,20 @@
+#include<stdio.h> 
+int main(){
+int n;
+printf("enter the numbers:");
+scanf("%d",&n);
+int firstterm=0;
+int secterm=1;
+int term;
+printf("%d\n",firstterm);
+printf("%d\n",secterm);
+for(int i=1;i<n-1;i++){
+term=firstterm + secterm;
+firstterm=secterm;
+secterm=term;
+printf("%d\n",term);
+}
+
+return 0;
+
+}

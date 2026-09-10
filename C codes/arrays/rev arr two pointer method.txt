@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+void rev(int arr[],int size){
+  int start=0,end=size-1;
+while(start<=end){
+  swap(arr[start],arr[end]);
+  end--,start++;
+}}
+
+
+int main(){
+  int size=6,n,flag =0;
+int arr[size]={3,5,2,6,6,1};
+
+rev(arr,6);
+for(int k=0;k<size;k++){
+  cout<<arr[k];
+}
+
+
+
+return 0;
+}

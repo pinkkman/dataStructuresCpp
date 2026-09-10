@@ -200,4 +200,3 @@ int main(){
   cout<<graph.hasPath(0,6,viss);
 return 0;
 }
->>>>>>> 16f3706b7738f58804a41bb9b7d1baf5f4b3d9bb

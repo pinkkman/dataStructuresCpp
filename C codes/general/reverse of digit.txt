@@ -1,0 +1,17 @@
+#include<stdio.h> 
+int main(){
+int n;
+printf("enter the numbers:");
+scanf("%d",&n);
+int dig;
+printf("reverse of the digits are: ");
+for(int i=1;n>1;i++){
+dig=n%10;
+n=n/10;
+printf("%d",dig);
+}
+
+
+return 0;
+
+}
